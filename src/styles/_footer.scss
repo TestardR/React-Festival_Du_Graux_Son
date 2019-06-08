@@ -1,3 +1,12 @@
 .footer {
-  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+#footerSignature {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.4);
 }

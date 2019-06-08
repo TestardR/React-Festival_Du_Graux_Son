@@ -8,6 +8,7 @@ const BaseLayout = props => {
     <div className={className}>
       <Header />
       {children}
+      <Footer />
     </div>
   );
 };
