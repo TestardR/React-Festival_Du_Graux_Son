@@ -4,3 +4,48 @@
   width: 100vw;
   height: 100vh;
 }
+
+.homeLogo {
+  color: rgb(38, 110, 226);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: pre-line;
+  text-align: center;
+  span {
+    background: white;
+  }
+  .title {
+    font-family: 'MajorMonoDisplay' !important;
+    font-size: 6rem;
+    @media only screen and (max-width: 767px) {
+      font-size: 3rem;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1280px) {
+      font-size: 4rem;
+    }
+  }
+  .edition {
+    margin-top: 1rem;
+    font-size: 2.75rem !important;
+    @media only screen and (max-width: 767px) {
+      font-size: 1.5rem !important;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1280px) {
+      font-size: 2rem !important;
+    }
+  }
+  .info {
+    font-family: 'MontSerrat', sans-serif;
+    font-weight: 'light';
+    font-size: 1.75rem;
+    line-height: 1.25;
+    @media only screen and (max-width: 767px) {
+      font-size: 1rem !important;
+    }
+    @media only screen and (min-width: 767px) and (max-width: 1280px) {
+      font-size: 1.25rem !important;
+    }
+  }
+}

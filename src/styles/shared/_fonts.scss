@@ -5,3 +5,11 @@
   src: local('MajorMonoDisplay'),
     url('../static/fonts/MajorMonoDisplay-Regular.ttf') format('woff2');
 }
+
+@font-face {
+  font-family: 'MontSerrat';
+  font-weight: 300;
+  font-style: normal;
+  src: local('WallPoet'),
+    url('../static/fonts/Montserrat-Light.ttf') format('woff2');
+}
