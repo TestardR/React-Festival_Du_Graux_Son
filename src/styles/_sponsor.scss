@@ -1,3 +1,20 @@
 .sponsor {
   padding-top: 2rem;
 }
+
+.sponsorItem {
+  cursor: pointer;
+  font-size: 4rem;
+  margin: 0 2rem 0 2rem;
+  color: rgba(255, 255, 255, 0.6);
+  &:hover {
+    color: $bleu-canard;
+  }
+  @media only screen and (max-width: 767px) {
+    margin: 0 0.5rem 0 0.5rem;
+    font-size: 2rem;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 3rem;
+  }
+}
