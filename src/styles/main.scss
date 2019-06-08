@@ -2,8 +2,17 @@
 @import './footer';
 @import './home';
 @import './sponsor';
-@import './footer';
+@import './lineup';
+@import './restauration';
+@import './hebergement';
+@import './contact';
+@import './info';
 @import './shared/fonts';
+
+html,
+body {
+  font-family: 'Helvetica';
+}
 
 // RESET
 
@@ -136,9 +145,4 @@ table {
   background: rgb(1, 18, 45);
   width: 100vw;
   height: 100vh;
-}
-
-html,
-body {
-  font-family: 'Helvetica';
 }

@@ -1,7 +1,12 @@
 import React from 'react';
+import BaseLayout from './layouts/BaseLayout';
 
 const Info = () => {
-  return <div>Info</div>;
+  return (
+    <BaseLayout className="infoBackground">
+      <div>Info</div>
+    </BaseLayout>
+  );
 };
 
 export default Info;

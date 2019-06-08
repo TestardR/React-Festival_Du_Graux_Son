@@ -1,7 +1,12 @@
 import React from 'react';
+import BaseLayout from './layouts/BaseLayout';
 
 const LineUp = () => {
-  return <div>LineUp</div>;
+  return (
+    <BaseLayout className="lineupBackground">
+      <div>LineUp</div>
+    </BaseLayout>
+  );
 };
 
 export default LineUp;

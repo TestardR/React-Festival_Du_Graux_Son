@@ -1,7 +1,12 @@
 import React from 'react';
+import BaseLayout from './layouts/BaseLayout';
 
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <BaseLayout className="contactBackground">
+      <div>Contact</div>
+    </BaseLayout>
+  );
 };
 
 export default Contact;

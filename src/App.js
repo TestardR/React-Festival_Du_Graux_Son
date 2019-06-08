@@ -6,8 +6,6 @@ import Restauration from './components/Restauration';
 import Hebergement from './components/Hebergement';
 import Contact from './components/Contact';
 import Info from './components/Info';
-import Header from './components/layouts/Header';
-import Footer from './components/layouts/Footer';
 
 function App() {
   return (

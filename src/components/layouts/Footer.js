@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <div className="footer">
-      <Link id="footerSignature" to="/">
+      <a id="footerSignature" href="https://www.linkedin.com/in/testardr/">
         © Romain Testard, 2019
-      </Link>
+      </a>
     </div>
   );
 };

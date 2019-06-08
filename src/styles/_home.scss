@@ -1,6 +1,7 @@
 .homeBackground {
   background-image: url('../static/images/homeImage.png');
   overflow: hidden;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
 }
