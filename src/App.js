@@ -13,14 +13,12 @@ function App() {
   return (
     <div className="background">
       <Router>
-        <Header />
         <Route exact path="/" component={Home} />
         <Route exact path="/lineup" component={LineUp} />
         <Route exact path="/restauration" component={Restauration} />
         <Route exact path="/hebergement" component={Hebergement} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/info" component={Info} />
-        <Footer />
       </Router>
     </div>
   );
