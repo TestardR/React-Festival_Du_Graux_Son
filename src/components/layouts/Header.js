@@ -9,7 +9,7 @@ const Header = () => {
     <Fragment>
       <MediaQuery query="(min-device-width: 768px)">
         <Row>
-          <Col xl="9" sm="7">
+          <Col lg="9" sm="7">
             <ul className="headerMenu">
               <li>
                 <Link className="headerItem" id="headerItem1" to="/">
@@ -48,7 +48,7 @@ const Header = () => {
               </li>
             </ul>
           </Col>
-          <Col xl="3" sm="5">
+          <Col lg="3" sm="5">
             <div className="headerLogo">K-MAGRA</div>
           </Col>
         </Row>
