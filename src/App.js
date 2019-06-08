@@ -7,6 +7,7 @@ import Hebergement from './components/Hebergement';
 import Contact from './components/Contact';
 import Info from './components/Info';
 import Header from './components/layouts/Header';
+import Footer from './components/layouts/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/hebergement" component={Hebergement} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/info" component={Info} />
+        <Footer />
       </Router>
     </div>
   );

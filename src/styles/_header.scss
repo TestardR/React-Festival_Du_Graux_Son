@@ -1,0 +1,109 @@
+@import './shared/colors';
+
+.headerLogo {
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'MajorMonoDisplay';
+  @media only screen and (max-width: 767px) {
+    font-size: 2.25rem;
+    margin-top: 1.2rem;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1280px) {
+    font-size: 3rem;
+  }
+}
+
+.headerMenu {
+  margin: 2rem 0 0 2rem;
+  li {
+    list-style-type: none;
+  }
+  .headerItem {
+    text-decoration: none;
+    color: white;
+    line-height: 1.5rem;
+    font-size: 2rem;
+    &:hover {
+      color: $bleu-canard;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1280px) {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+// Burger @media
+#page-wrap {
+  text-align: center;
+
+  /* Prevent sidebar from showing a scrollbar on page */
+  overflow: auto;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: white;
+  transition: color 0.2s;
+}
+
+/* Change color on hover */
+.bm-item:hover {
+  color: $bleu-nuit;
+  text-decoration: none;
+}
+
+/* The rest copied directly from react-burger-menu docs */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: white;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: white;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: $bleu-canard;
+  padding: 2.6em 1.8em 0;
+  font-size: 1.5em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: black;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: black;
+}
+
+/* In JS file */
+.bm-overlay {
+  background: rgba(0, 0, 0, 1);
+}
