@@ -16,10 +16,15 @@
 .lineupItem {
   cursor: pointer;
   font-size: 2rem;
+  line-height: 4rem;
   text-transform: uppercase;
   font-weight: bold;
   &:hover {
     color: $bleu-canard;
     font-size: 3rem;
   }
+}
+
+.lineupImage {
+  border: black solid 2px;
 }
