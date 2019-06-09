@@ -1,7 +1,25 @@
+@import './shared/colors';
+
 .lineupBackground {
   background-image: url('../static/images/lineupImage.png');
   overflow: hidden;
   background-size: cover;
   width: 100vw;
   height: 100vh;
+}
+
+.lineupWrapper {
+  padding: 4rem 1rem 0 1rem;
+  color: white;
+}
+
+.lineupItem {
+  cursor: pointer;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  &:hover {
+    color: $bleu-canard;
+    font-size: 3rem;
+  }
 }
