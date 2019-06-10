@@ -4,11 +4,14 @@ import Footer from './Footer';
 
 const BaseLayout = props => {
   const { children, className } = props;
+
   return (
-    <div className={className}>
-      <Header />
-      {children}
-      <Footer />
+    <div className={`baselayout ${className}`}>
+      <div className="baseloutWrapper">
+        <Header />
+        {children}
+        <Footer />
+      </div>
     </div>
   );
 };

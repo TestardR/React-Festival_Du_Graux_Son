@@ -146,3 +146,12 @@ table {
   width: 100vw;
   height: 100vh;
 }
+
+.baselayout {
+  position: relative;
+  min-height: 100vh;
+}
+
+.baseloutWrapper {
+  padding-bottom: 2.5rem;
+}

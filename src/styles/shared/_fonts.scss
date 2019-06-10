@@ -7,9 +7,17 @@
 }
 
 @font-face {
-  font-family: 'MontSerrat';
+  font-family: 'MontSerrat-Light';
   font-weight: 300;
   font-style: normal;
   src: local('WallPoet'),
     url('../static/fonts/Montserrat-Light.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'MontSerrat-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local('WallPoet'),
+    url('../static/fonts/Montserrat-Regular.ttf') format('woff2');
 }

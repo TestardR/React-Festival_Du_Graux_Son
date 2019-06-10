@@ -1,7 +1,44 @@
+@import './shared/colors';
+
 .restoBackground {
   background-image: url('../static/images/restoImage.png');
-  overflow: hidden;
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
+}
+
+.restaurationWrapper {
+  background-color: white;
+  margin: 4rem 15rem 0rem 15rem;
+}
+
+.imageRestauration {
+  padding: 3rem 4rem 3rem 3rem;
+}
+
+.restaurationText {
+  padding: 3rem 3rem 3rem 4rem !important;
+}
+
+#restaurationTitle {
+  text-align: center;
+  color: $bleu-canard;
+  font-size: 2.5rem;
+  font-family: 'Montserrat-Regular';
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+#restaurationContent {
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+.restaurationLogoWrapper {
+  text-align: center;
+}
+
+.restaurationLogo {
+  font-size: 3rem;
+  padding: 1rem 2rem 0 2rem;
+  cursor: pointer;
 }
