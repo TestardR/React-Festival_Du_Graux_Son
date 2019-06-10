@@ -4,6 +4,7 @@ import { Row, Col } from 'reactstrap';
 
 import BaseLayout from './layouts/BaseLayout';
 import Cook1 from '../static/images/cook1.jpg';
+import Cook2 from '../static/images/cook2.jpg';
 
 class Restauration extends Component {
   state = {
@@ -14,6 +15,13 @@ class Restauration extends Component {
         title: 'The Cooking Cooks',
         content:
           'The Cooking Cooks are Francesco and Alice, and they sell beautiful hand crafted Artisan fresh pasta. Their influences come from the vast larder of Italian and British cooking and they have given it a twist with their own unique, modern style. Some dishes you will have heard of, others are a little more unusual. Alice & Fancesco use only the freshest of ingredients & are always experimenting with seasonal ideas and different flavours. They have a wide range of pasta’s some super healthy, some gluten free, all the dough is made with tasty vegetables, seeds and fruits, they are magical on the eye as well as on the tum!'
+      },
+      {
+        id: 2,
+        imgSrc: Cook2,
+        title: 'Gingers',
+        content:
+          "Making small batch, inventively flavoured real dairy ice cream, sorbet and vegan ice cream since 2010. Winner of British Street Food awards 'Best Dessert' 2011, '12, '13 and winner of 'Best Of The Best' 2012. Our recipe book MELT was published by Simon & Schuster 2013. Their beautiful retro ice cream van (lovingly hand designed inside and out) Ginger, loves meeting new crowds and their menu is always a talking point of any festival! Most ice creams are naturally gluten free, and 50% of the menu is vegan. Gingers only present vegan flavours that are every bit as divine as the real dairy versions."
       }
     ]
   };
@@ -22,7 +30,7 @@ class Restauration extends Component {
     return (
       <BaseLayout className="restoBackground">
         <div className="restaurationWrapper">
-          <Row className="justify-content-center">
+          <Row>
             <Col className="restaurationText">
               <div id="restaurationTitle">{this.state.cooks[0].title}</div>
               <div id="restaurationContent">{this.state.cooks[0].content}</div>
@@ -31,26 +39,30 @@ class Restauration extends Component {
                 <i className="fab fa-facebook-square restaurationLogo" />
               </div>
             </Col>
-            <Image
-              src={this.state.cooks[0].imgSrc}
-              className="imageRestauration"
-            />
+            <Col>
+              <Image
+                src={this.state.cooks[0].imgSrc}
+                className="imageRestauration"
+              />
+            </Col>
           </Row>
         </div>
         <div className="restaurationWrapper">
-          <Row className="justify-content-center">
+          <Row>
+            <Col>
+              <Image
+                src={this.state.cooks[1].imgSrc}
+                className="imageRestauration"
+              />
+            </Col>
             <Col className="restaurationText">
-              <div id="restaurationTitle">{this.state.cooks[0].title}</div>
-              <div id="restaurationContent">{this.state.cooks[0].content}</div>
+              <div id="restaurationTitle">{this.state.cooks[1].title}</div>
+              <div id="restaurationContent">{this.state.cooks[1].content}</div>
               <div className="restaurationLogoWrapper">
                 <i className="fab fa-instagram restaurationLogo" />
                 <i className="fab fa-facebook-square restaurationLogo" />
               </div>
             </Col>
-            <Image
-              src={this.state.cooks[0].imgSrc}
-              className="imageRestauration"
-            />
           </Row>
         </div>
       </BaseLayout>
