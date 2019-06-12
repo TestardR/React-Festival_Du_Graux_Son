@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Image } from 'react-bootstrap';
 import { Row, Col } from 'reactstrap';
+import MediaQuery from 'react-responsive';
 
 import BaseLayout from './layouts/BaseLayout';
 import Cook1 from '../static/images/cook1.jpg';
@@ -26,45 +27,82 @@ class Restauration extends Component {
     ]
   };
 
+  style = {
+    backgroundColor: 'white',
+    paddingBottom: '1rem',
+    display: 'block'
+  };
+
+  renderCooks = style => {
+    return this.state.cooks.map(cook => {
+      return (
+        <div className="restaurationWrapperMobile">
+          <Row style={style}>
+            <div className="restaurationText" key={cook.id}>
+              <div id="restaurationTitle">{cook.title}</div>
+              <div id="restaurationContent">{cook.content}</div>
+              <div className="restaurationLogoWrapper">
+                <i className="fab fa-instagram restaurationLogo" />
+                <i className="fab fa-facebook-square restaurationLogo" />
+              </div>
+            </div>
+            <div>
+              <Image src={cook.imgSrc} className="imageRestauration" />
+            </div>
+          </Row>
+        </div>
+      );
+    });
+  };
+
   render() {
     return (
       <BaseLayout className="restoBackground">
-        <div className="restaurationWrapper">
-          <Row>
-            <Col className="restaurationText">
-              <div id="restaurationTitle">{this.state.cooks[0].title}</div>
-              <div id="restaurationContent">{this.state.cooks[0].content}</div>
-              <div className="restaurationLogoWrapper">
-                <i className="fab fa-instagram restaurationLogo" />
-                <i className="fab fa-facebook-square restaurationLogo" />
-              </div>
-            </Col>
-            <Col>
-              <Image
-                src={this.state.cooks[0].imgSrc}
-                className="imageRestauration"
-              />
-            </Col>
-          </Row>
-        </div>
-        <div className="restaurationWrapper">
-          <Row>
-            <Col>
-              <Image
-                src={this.state.cooks[1].imgSrc}
-                className="imageRestauration"
-              />
-            </Col>
-            <Col className="restaurationText">
-              <div id="restaurationTitle">{this.state.cooks[1].title}</div>
-              <div id="restaurationContent">{this.state.cooks[1].content}</div>
-              <div className="restaurationLogoWrapper">
-                <i className="fab fa-instagram restaurationLogo" />
-                <i className="fab fa-facebook-square restaurationLogo" />
-              </div>
-            </Col>
-          </Row>
-        </div>
+        <MediaQuery query="(min-device-width: 836px)">
+          <div className="restaurationWrapper">
+            <Row>
+              <Col className="restaurationText">
+                <div id="restaurationTitle">{this.state.cooks[0].title}</div>
+                <div id="restaurationContent">
+                  {this.state.cooks[0].content}
+                </div>
+                <div className="restaurationLogoWrapper">
+                  <i className="fab fa-instagram restaurationLogo" />
+                  <i className="fab fa-facebook-square restaurationLogo" />
+                </div>
+              </Col>
+              <Col>
+                <Image
+                  src={this.state.cooks[0].imgSrc}
+                  className="imageRestauration"
+                />
+              </Col>
+            </Row>
+          </div>
+          <div className="restaurationWrapper">
+            <Row>
+              <Col>
+                <Image
+                  src={this.state.cooks[1].imgSrc}
+                  className="imageRestauration"
+                />
+              </Col>
+              <Col className="restaurationText">
+                <div id="restaurationTitle">{this.state.cooks[1].title}</div>
+                <div id="restaurationContent">
+                  {this.state.cooks[1].content}
+                </div>
+                <div className="restaurationLogoWrapper">
+                  <i className="fab fa-instagram restaurationLogo" />
+                  <i className="fab fa-facebook-square restaurationLogo" />
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </MediaQuery>
+        <MediaQuery query="(max-device-width: 835px)">
+          {this.renderCooks()}
+        </MediaQuery>
       </BaseLayout>
     );
   }
