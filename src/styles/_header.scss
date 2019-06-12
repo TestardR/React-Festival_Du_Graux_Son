@@ -3,6 +3,7 @@
 .headerLogo {
   margin: 0rem;
   margin-top: 1.2rem;
+  padding-top: 0.7rem;
   color: white;
   font-size: 4rem;
   font-weight: bold;
@@ -67,7 +68,11 @@
 }
 
 /* The rest copied directly from react-burger-menu docs */
-
+.bm-burger-button {
+  background: $bleu-nuit;
+  border: 8px solid $bleu-nuit;
+  box-sizing: content-box;
+}
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
@@ -95,7 +100,7 @@
 
 /* General sidebar styles */
 .bm-menu {
-  background: $bleu-canard;
+  background: $bleu-canard-transparent;
   padding: 2.6em 1.8em 0;
   font-size: 1.5em;
 }

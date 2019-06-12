@@ -17,11 +17,13 @@
 }
 
 .lineupItem {
+  font-family: 'Helvetica';
   cursor: pointer;
   font-size: 2rem;
   line-height: 4rem;
   text-transform: uppercase;
   font-weight: bold;
+
   &:hover {
     color: $bleu-canard;
     font-size: 3rem;
