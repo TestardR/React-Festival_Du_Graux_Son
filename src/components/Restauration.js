@@ -27,18 +27,12 @@ class Restauration extends Component {
     ]
   };
 
-  style = {
-    backgroundColor: 'white',
-    paddingBottom: '1rem',
-    display: 'block'
-  };
-
-  renderCooks = style => {
+  renderCooks = () => {
     return this.state.cooks.map(cook => {
       return (
-        <div className="restaurationWrapperMobile">
-          <Row style={style}>
-            <div className="restaurationText" key={cook.id}>
+        <div className="restaurationWrapperMobile" key={cook.id}>
+          <Row>
+            <div className="restaurationText">
               <div id="restaurationTitle">{cook.title}</div>
               <div id="restaurationContent">{cook.content}</div>
               <div className="restaurationLogoWrapper">

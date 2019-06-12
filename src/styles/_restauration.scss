@@ -35,7 +35,7 @@
     padding: 0rem 0rem 0rem 0rem;
   }
   @media only screen and (max-width: 835px) {
-    padding: 0rem 1.5rem 1rem 1.5rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
   }
 }
 
@@ -81,4 +81,8 @@
   @media only screen and (max-width: 835px) {
     font-size: 2rem;
   }
+}
+
+.restaurationWrapperMobile {
+  padding-top: 1.4rem;
 }
