@@ -9,11 +9,6 @@
 @import './info';
 @import './shared/fonts';
 
-html,
-body {
-  font-family: 'Helvetica';
-}
-
 // RESET
 
 html,
@@ -141,6 +136,13 @@ table {
   border-spacing: 0;
 }
 
+html,
+body {
+  font-family: 'Helvetica';
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
 .background {
   background: rgb(1, 18, 45);
   width: 100vw;
@@ -152,6 +154,6 @@ table {
   min-height: 100vh;
 }
 
-.baseloutWrapper {
+.baselayoutWrapper {
   padding-bottom: 2.5rem;
 }

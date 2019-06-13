@@ -7,7 +7,7 @@ const BaseLayout = props => {
 
   return (
     <div className={`baselayout ${className}`}>
-      <div className="baseloutWrapper">
+      <div className="baselayoutWrapper">
         <Header />
         {children}
         <Footer />
