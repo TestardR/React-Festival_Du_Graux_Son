@@ -13,16 +13,16 @@ class Restauration extends Component {
       {
         id: 1,
         imgSrc: Cook1,
-        title: 'Dodo',
+        title: 'The Cooking Cooks',
         content:
-          'The Cooking Cooks are Francesco and Alice, and they sell beautiful hand crafted Artisan fresh pasta. Their influences come from the vast larder of Italian and British cooking and they have given it a twist with their own unique, modern style.'
+          'The Cooking Cooks are Francesco and Alice, and they sell beautiful hand crafted Artisan fresh pasta. Their influences come from the vast larder of Italian and British cooking and they have given it a twist with their own unique, modern style. Some dishes you will have heard of, others are a little more unusual. Alice & Fancesco use only the freshest of ingredients & are always experimenting with seasonal ideas and different flavours. They have a wide range of pasta’s some super healthy, some gluten free, all the dough is made with tasty vegetables, seeds and fruits, they are magical on the eye as well as on the tum!'
       },
       {
         id: 2,
         imgSrc: Cook2,
-        title: 'Camping',
+        title: 'Gingers',
         content:
-          "Making small batch, inventively flavoured real dairy ice cream, sorbet and vegan ice cream since 2010. Winner of British Street Food awards 'Best Dessert' 2011, '12, '13 and winner of 'Best Of The Best' 2012."
+          "Making small batch, inventively flavoured real dairy ice cream, sorbet and vegan ice cream since 2010. Winner of British Street Food awards 'Best Dessert' 2011, '12, '13 and winner of 'Best Of The Best' 2012. Our recipe book MELT was published by Simon & Schuster 2013. Their beautiful retro ice cream van (lovingly hand designed inside and out) Ginger, loves meeting new crowds and their menu is always a talking point of any festival! Most ice creams are naturally gluten free, and 50% of the menu is vegan. Gingers only present vegan flavours that are every bit as divine as the real dairy versions."
       }
     ]
   };
