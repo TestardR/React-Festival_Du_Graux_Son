@@ -4,11 +4,11 @@ import BaseLayout from './layouts/BaseLayout';
 import { Row, Col } from 'reactstrap';
 import { Image } from 'react-bootstrap';
 
-const LineupBase = '/images/lineupBase.jpg';
-const LineupSky = '/images/lineupSky.jpg';
-const LineupHotdog = '/images/lineupHotdog.jpg';
-const LineupWar = '/images/lineupWar.jpg';
-const LineupHippy = '/images/lineupHippy.jpg';
+import LineupBase from './images/lineupBase.jpg';
+import LineupSky from './images/lineupSky.jpg';
+import LineupHotdog from './images/lineupHotdog.jpg';
+import LineupWar from './images/lineupWar.jpg';
+import LineupHippy from './images/lineupHippy.jpg';
 
 class LineUp extends Component {
   constructor(props) {
@@ -45,7 +45,7 @@ class LineUp extends Component {
                     lg="auto"
                     onMouseOver={() => this.handleMouseOver(LineupSky)}
                     onMouseOut={() => this.handleMouseOut()}
-                    src={require(`%PUBLIC_URL% ${LineupBase}`)}
+                    src={LineupBase}
                     alt="lineUp"
                   >
                     Banzai
